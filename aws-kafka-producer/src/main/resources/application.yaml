@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    string-topic: string-topic
+    payment-topic: payment-stream
+    producer:
+      bootstrap-servers: localhost:9092

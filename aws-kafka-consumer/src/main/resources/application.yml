@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  kafka:
+    string-topic: string-topic
+    payment-topic: payment-stream
+  consumer:
+    bootstrap-servers: localhost:9092
+    group-id: service1
+#    auto-offset-reset: earliest
+#    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#    value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#    properties.spring.json.trusted.packages: '*'
